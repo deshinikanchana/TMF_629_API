@@ -23,7 +23,7 @@ app.use("/api/hub",hubRoutes);
 
 app.get('/', async (_req, res) => {
     try {
-        const response = await axios.get(`https://tmf629-customers.railway.app/tmf-api/customerManagement/v5/customer`);
+        const response = await axios.get(`https://tmf629api-production.up.railway.app/tmf-api/customerManagement/v5/customer`);
 
         res.send(`
       <h2>Customer Management API</h2>
