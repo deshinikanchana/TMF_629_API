@@ -71,7 +71,7 @@ CustomerSchema.pre('save', async function (next) {
         }
 
         this.id = `Cust-${newIdNumber}`;
-        this.href = `http://localhost:3000/tmf-api/customerManagement/v5/customer/${this.id}`;
+        this.href = `https://tmf629api-production.up.railway.app/tmf-api/customerManagement/v5/customer/${this.id}`;
         next();
     } catch (err) {
         next(err);
